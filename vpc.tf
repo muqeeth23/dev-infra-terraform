@@ -5,12 +5,7 @@ module "lms-vpc-dev" {
   vpcname = "lms-project-vpc-dev"
   env     = "dev"
 }
-module "lms-vpc-qa" {
-  source  = "./modules/vpc_module"
-  vpccidr = "10.0.4.0/22"
-  vpcname = "lms-project-vpc-qa"
-  env     = "qa"
-}
+
 
 module "lms-dev-pvt-sn1" {
   source     = "./modules/subnet_module"
